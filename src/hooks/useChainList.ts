@@ -10,12 +10,12 @@ export default function() {
     {
       name: "Genesis L1 blockchain",
       network: "testnet",
-      rpc: ["http://testrpc.genesisl1.org:8545"],
+      rpc: ["https://testrpc.genesisl1.org:8545"],
     },
     {
       name: "Genesis L1 blockchain",
       network: "mainnet",
-      rpc: ["http://rpc.genesisl1.org"],
+      rpc: ["https://rpc.genesisl1.org"],
     },
   ]);
 
