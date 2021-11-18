@@ -8,9 +8,14 @@ import React from "react";
 export default function() {
   const [chains, setChains] = React.useState<Chain[]>([
     {
-      name: "Genesis L1",
+      name: "Genesis L1 blockchain",
       network: "testnet",
-      rpc: ["http://135.181.5.216:8545"],
+      rpc: ["https://testrpc.genesisl1.org:8545"],
+    },
+    {
+      name: "Genesis L1 blockchain",
+      network: "mainnet",
+      rpc: ["https://rpc.genesisl1.org"],
     },
   ]);
 
