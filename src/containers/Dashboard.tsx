@@ -113,21 +113,17 @@ export default (props: any) => {
           }
           <Grid key="gasPrice" item>
             <ChartCard title={t("Gas Price")}>
-              <Typography variant="h4">{weiToGwei(hexToNumber(gasPrice))} Gwei</Typography>
+              <Typography variant="h4">{hexToNumber(gasPrice)} wei</Typography>
             </ChartCard>
           </Grid>
           <Grid key="hRate" item>
-            <ChartCard title={t("Network Hash Rate")}>
-              {block &&
-                <HashRate block={block} blockTime={config.blockTime}>
-                  {(hashRate: any) => <Typography variant="h4">{hashRate} GH/s</Typography>}
-                </HashRate>
-              }
+            <ChartCard title={t("Coin name")}>
+             <Typography variant="h4">L1</Typography>
             </ChartCard>
           </Grid>
           <Grid key="peers" item>
-            <ChartCard title={t("Peers")}>
-              <Typography variant="h4">{hexToNumber(peerCount)}</Typography>
+            <ChartCard title={t("Layer 1 blockchain")}>
+              <Typography variant="h4">Genesis L1</Typography>
             </ChartCard>
           </Grid>
         </Grid>
