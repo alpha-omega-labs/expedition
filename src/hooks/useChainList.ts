@@ -9,13 +9,13 @@ export default function() {
   const [chains, setChains] = React.useState<Chain[]>([
     {
       name: "Genesis L1 blockchain",
-      network: "testnet",
-      rpc: ["https://testrpc.genesisl1.org"],
-    },
-    {
-      name: "Genesis L1 blockchain",
       network: "mainnet",
       rpc: ["https://rpc.genesisl1.org"],
+    },
+    {
+      name: "Genesis L1 test blockchain",
+      network: "testnet",
+      rpc: ["https://testrpc.genesisl1.org"],
     },
   ]);
 
