@@ -113,7 +113,7 @@ export default (props: any) => {
           }
           <Grid key="gasPrice" item>
             <ChartCard title={t("Gas Price")}>
-              <Typography variant="h4">{hexToNumber(gasPrice)} wei</Typography>
+              <Typography variant="h4">{weiToGwei(hexToNumber(gasPrice))} Gwei</Typography>
             </ChartCard>
           </Grid>
           <Grid key="hRate" item>
