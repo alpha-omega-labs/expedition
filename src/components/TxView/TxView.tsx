@@ -63,12 +63,12 @@ function TxView(props: ITxViewProps) {
 
           <TableRow>
             <TableCell>{t("Gas Price")}</TableCell>
-            <TableCell>{hexToNumber(tx.gasPrice)} Wei</TableCell>
+            <TableCell>{hexToNumber(tx.gasPrice)} aphoton (wei)</TableCell>
           </TableRow>
 
           <TableRow>
             <TableCell>{t("Value")}</TableCell>
-            <TableCell>{unit.fromWei(tx.value, "ether")} Ether</TableCell>
+            <TableCell>{unit.fromWei(tx.value, "ether")} L1</TableCell>
           </TableRow>
 
           <TableRow>
